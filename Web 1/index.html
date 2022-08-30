@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0c9fbb2635.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" id="navbar-logo"><h1>Colors</h1></a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                <li>
+                    <a href="#home" class="navbar-links" id="home-page">Home</a>
+                </li>
+
+                <li class="navba-item">
+                    <a href="#about" class="navbar-links" is="about-page">About</a>
+                </li>
+
+                <li class="navba-item">
+                    <a href="#services" class="navbar-links" is="services-page">Services</a>
+                </li>
+
+                <li class="navbar-btn">
+                    <a href="#sign-up" class="button" id="services-page">Sign Up</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero-container">
+            <h1 class="hero-heading">Choose your <span>colors</span></h1>
+            <p class="hero-description">Unlimited possiblities</p>
+            <button class="main-btn"><a href="#">Explore</a></button>
+        </div>
+    </div>
+
+    <!--About Section-->
+<div class="main" id="about">
+    <div class="main-container">
+        <div class="main-img-container">
+            <div class="main-img-card"><i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="main-content">
+            <h1>What do we do?</h1>
+            <h2>We help businesses scale</h2>
+            <p>Schedule a call to learn more about our services</p>
+            <button class="main-btn"><a href="#">Schedule Call</a></button>
+        </div>
+    </div>
+</div>
+
+<!-- Services Section -->
+<div class="services" id="services">
+    <h1>Our Services</h1>
+    <div class="services-wrapper">
+        <div class="services-card">
+            <h2>Custom Colorways</h2>
+            <p>AI Power Technology</p>
+            <div class="services-btn"><button>Get Started</button></div>
+        </div>
+        <div class="services-card">
+            <h2>Custom Colorways</h2>
+            <p>AI Power Technology</p>
+            <div class="services-btn"><button>Get Started</button></div>
+        </div>
+        <div class="services-card">
+            <h2>Custom Colorways</h2>
+            <p>AI Power Technology</p>
+            <div class="services-btn"><button>Get Started</button></div>
+        </div>
+    </div>
+</div>
+
+<!-- Feutures Section -->
+<div class="main" id="sign-up">
+    <div class="main-container">
+        <div class="main-content">
+            <h1>Join our Team</h1>
+            <h2>Sign up Today</h2>
+            <p>Sce what makes us different</p>
+            <button class="main-btn"><a href="#">Sign Up</a></button>
+        </div>
+        <div class="main-img-container">
+            <div class="main-img-card" id="card-2"><i class="fas fa-users"></i></div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- FOOTER Section -->
+<div class="footer-container">
+    <div class="footer-links">
+        <div class="footer-links-wrapper">
+            <div class="footer-links-items">
+                <h2>About us</h2>
+                <a href="/sign-up">How it works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">Careers</a>
+                <a href="/sign-up">Terms of Services</a>
+            </div>
+        </div>
+        <div class="footer-links-wrapper">
+            <div class="footer-links-items">
+                <h2>Contact Us</h2>
+                <a href="/sign-up">How it works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">Careers</a>
+                <a href="/sign-up">Terms of Services</a>
+            </div>
+        </div>
+        <div class="footer-links-wrapper">
+            <div class="footer-links-items">
+                <h2>Videos</h2>
+                <a href="/sign-up">How it works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">Careers</a>
+                <a href="/sign-up">Terms of Services</a>
+            </div>
+        </div>
+    </div>
+    <section class="social-media">
+        <div class="social-media-wrap">
+            <div class="footer-logo">
+                <a href="/" id="footer-logo">Color</a>
+            </div>
+            <p class="website-rights">© Color 2022. All rights reserved</p>
+            <div class="social-icons">
+                <a href="/" class="social-icons-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="/" class="social-icons-link"><i class="fab fa-instagram"></i></a>
+                <a href="/" class="social-icons-link"><i class="fab fa-youtube"></i></a>
+                <a href="/" class="social-icons-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
